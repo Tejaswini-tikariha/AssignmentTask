@@ -1,6 +1,8 @@
 package com.example.assignmentkss.ui
 
 import android.os.Bundle
+import android.view.View
+import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -38,12 +40,16 @@ class MainActivity : AppCompatActivity() {
         binding.listRecyclerView.layoutManager = LinearLayoutManager(this)
 
         viewModel.items.observe(this) { items ->
+            binding.noInternetText.visibility = View.GONE
+            binding.listRecyclerView.visibility = View.VISIBLE
             binding.listRecyclerView.adapter = ListItemAdapter(items)
         }
 
         viewModel.error.observe(this) { error ->
             error?.let {
-                // Show an error message (e.g., Toast)
+                binding.noInternetText.visibility = View.VISIBLE
+                binding.listRecyclerView.visibility = View.GONE
+                Toast.makeText(this, "Something went wrong!", Toast.LENGTH_SHORT).show()
             }
         }
     }
