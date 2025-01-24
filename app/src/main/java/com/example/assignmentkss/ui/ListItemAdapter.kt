@@ -1,8 +1,9 @@
-package com.example.assignmentkss
+package com.example.assignmentkss.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.assignmentkss.data.ListDataModel
 import com.example.assignmentkss.databinding.ListItemViewBinding
 
 class ListItemAdapter(private val items: List<ListDataModel>) :

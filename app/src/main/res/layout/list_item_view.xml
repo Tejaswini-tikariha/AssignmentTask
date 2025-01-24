@@ -5,7 +5,7 @@
     <data>
         <variable
             name="item"
-            type="com.example.assignmentkss.ListDataModel" />
+            type="com.example.assignmentkss.data.ListDataModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

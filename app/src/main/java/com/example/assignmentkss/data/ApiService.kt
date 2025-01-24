@@ -1,4 +1,4 @@
-package com.example.assignmentkss
+package com.example.assignmentkss.data
 
 import retrofit2.http.GET
 

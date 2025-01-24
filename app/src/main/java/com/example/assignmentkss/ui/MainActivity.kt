@@ -1,14 +1,16 @@
-package com.example.assignmentkss
+package com.example.assignmentkss.ui
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.assignmentkss.data.ApiService
+import com.example.assignmentkss.viewModel.ItemViewModelFactory
+import com.example.assignmentkss.viewModel.MainViewModel
+import com.example.assignmentkss.R
 import com.example.assignmentkss.databinding.ActivityMainBinding
+import com.example.assignmentkss.repository.MainRepository
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

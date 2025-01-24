@@ -1,4 +1,4 @@
-package com.example.assignmentkss
+package com.example.assignmentkss.data
 
 import com.google.gson.annotations.SerializedName
 

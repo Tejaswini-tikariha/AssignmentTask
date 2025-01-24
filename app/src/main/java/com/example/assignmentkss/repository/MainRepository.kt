@@ -1,6 +1,8 @@
-package com.example.assignmentkss
+package com.example.assignmentkss.repository
 
 import android.util.Log
+import com.example.assignmentkss.data.ApiService
+import com.example.assignmentkss.data.ListDataModel
 
 class MainRepository(private val apiService: ApiService) {
     suspend fun fetchItems(): List<ListDataModel> {
